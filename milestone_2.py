@@ -13,11 +13,19 @@ print(word_list)
 word = random.choice(word_list)
 print("Randomly selected fruit:", word)
 
-# ask user for an input
-# use input() to ask for a single letter
+# ask user for an input of single letter
 # assign input to variable called guess
-
 guess = input("Please enter a single letter: ")
 
+# create conditional checks for the input
+# use if statement
+# .isalpha to check its alphabetical character
+if len(guess) == 1 and guess.isalpha():
+    print("Good guess!")
+else:
+    print("Oops! That is not a valid input.")
+
+# initialise new git repo
+# stage, commit and push changes to GitHub repo
 
 
