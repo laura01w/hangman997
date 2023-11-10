@@ -33,7 +33,7 @@ class Hangman:
 
 #create ask_for_input method in Hangman class
     def ask_for_input(self):
-        while True:
+        while self.num_lives > 0 and self.num_letters > 0:
             guess = input("Guess a letter: ")
             guess = guess.lower()
             
@@ -44,13 +44,14 @@ class Hangman:
             else:
                 self.check_guess(guess) #calls check_guess method
                 self.list_of_guesses.append(guess) #add the guess to the list of guesses
+
 # create play_game function
 def play_game(word_list):
     num_lives = 5
     game = Hangman(word_list,num_lives)
 
     while True:
-        if game.num_lives == 0:
+        if game.num_lives <= 0:
             print('You lost!')
             break
         elif game.num_letters > 0:
