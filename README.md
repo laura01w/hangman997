@@ -1,13 +1,12 @@
 ## Project Statement
 
-This project is still in development 09/11/2023
+This project is completed 10/11/2023
 
 ## Table of Contents
 1. Introduction
-1. Installisation instructions
-1. Usage instructions
+1. Description of the project
+1. Explanation of code
 1. File structure of the project
-1. Lisence information
 
 ## Introduction
 
@@ -32,9 +31,8 @@ HangmanProject
 ├── milestone_2.py
 ├── milestone_3.py
 ├── milestone_4.py
-├── 
-│   └── 
+├── milestone_5.py
+│   
 └── README.md
 
 ```
-
